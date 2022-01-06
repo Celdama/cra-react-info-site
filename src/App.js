@@ -1,12 +1,14 @@
 import './App.css';
-import Fact from './components/Fact';
-import Reason from './components/Reason';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <div className='App'>
-      {/* <Fact /> */}
-      <Reason />
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 };
