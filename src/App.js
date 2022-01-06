@@ -1,13 +1,13 @@
 import './App.css';
-import Header from './components/Header';
-import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
     <div className='App'>
-      <Header />
-      <MainContent />
+      <Navbar />
+      <Main />
       <Footer />
     </div>
   );
