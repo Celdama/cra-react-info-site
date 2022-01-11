@@ -5,7 +5,12 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
-  background-color: #282d35;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8e2dc;
 }
 
 .logo {
@@ -17,6 +22,7 @@ body {
   justify-content: space-between;
   background-color: #21222a;
   padding: 20px 14px;
+  border-radius: 12px 12px 0 0;
 }
 
 .nav > .nav-left {
@@ -32,6 +38,8 @@ body {
 
 main {
   padding: 57px 27px;
+  background-color: #282d35;
+  border-radius: 0 0 12px 12px;
 }
 
 main > .main--title {
@@ -55,4 +63,9 @@ main > .main--title {
 .main--facts > li::marker {
   color: #61dafb;
   font-size: 1.4rem;
+}
+
+.App {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
