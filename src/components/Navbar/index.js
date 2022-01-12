@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from '../../logo.svg';
+import { Wrapper, Nav } from './Navbar.styles';
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   return (
-    <header>
-      <nav className={`nav ${isDarkMode ? 'nav-dark' : ''}`}>
+    <Wrapper>
+      <Nav
+        isDarkMode={isDarkMode}
+        className={`nav ${isDarkMode ? 'nav-dark' : ''}`}
+      >
         <div className='nav-left'>
           <img src={logo} className='logo' alt='react-logo' />
           <h3>ReactFacts</h3>
@@ -23,8 +27,8 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
             <span>Dark</span>
           </div>
         </div>
-      </nav>
-    </header>
+      </Nav>
+    </Wrapper>
   );
 };
 
