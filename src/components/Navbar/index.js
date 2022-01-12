@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../logo.svg';
-import { Wrapper, Nav } from './Navbar.styles';
+import { Wrapper, Nav, Logo, Switch, Slider } from './Navbar.styles';
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   return (
@@ -10,21 +10,17 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
         className={`nav ${isDarkMode ? 'nav-dark' : ''}`}
       >
         <div className='nav-left'>
-          <img src={logo} className='logo' alt='react-logo' />
+          <Logo src={logo} alt='react-logo' />
           <h3>ReactFacts</h3>
         </div>
         <div className='nav-right'>
           <div className='toggle-mode'>
-            <span>Light</span>
-            <label className='switch'>
+            <span className='toggle-light'>Light</span>
+            <Switch className='switch'>
               <input type='checkbox' onChange={toggleDarkMode} />
-              <span
-                className={`slider round ${
-                  isDarkMode ? 'dark-span dark-slider' : ''
-                }`}
-              ></span>
-            </label>
-            <span>Dark</span>
+              <Slider isDarkMode={isDarkMode} className='slider round'></Slider>
+            </Switch>
+            <span className='toggle-dark'>Dark</span>
           </div>
         </div>
       </Nav>
