@@ -1,10 +1,11 @@
 import React from 'react';
+import { Wrapper } from './Footer.styles';
 
 const Footer = () => {
   return (
-    <footer>
-      <small>@2021 Celdama development. All rights reserved.</small>
-    </footer>
+    <Wrapper>
+      <small>@2021 Celdama</small>
+    </Wrapper>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import logo from './logo.svg';
 import { Wrapper, Nav, Logo, Switch, Slider } from './Navbar.styles';
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
