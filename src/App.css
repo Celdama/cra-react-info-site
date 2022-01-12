@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d8e2dc;
+  background-color: #264653;
 }
 
 .logo {
@@ -47,7 +47,7 @@ body {
 main {
   padding: 57px 27px;
   background-color: #fff;
-  border-radius: 0 0 12px 12px;
+  /* border-radius: 0 0 12px 12px; */
 }
 
 .main-dark {

@@ -15,7 +15,7 @@ const App = () => {
     <div className='App'>
       <Navbar isDarkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Main isDarkMode={darkMode} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
