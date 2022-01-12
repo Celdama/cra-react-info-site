@@ -5,10 +5,7 @@ import { Wrapper, Nav, Logo, Switch, Slider } from './Navbar.styles';
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <Wrapper>
-      <Nav
-        isDarkMode={isDarkMode}
-        className={`nav ${isDarkMode ? 'nav-dark' : ''}`}
-      >
+      <Nav isDarkMode={isDarkMode}>
         <div className='nav-left'>
           <Logo src={logo} alt='react-logo' />
           <h3>ReactFacts</h3>
@@ -16,7 +13,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
         <div className='nav-right'>
           <div className='toggle-mode'>
             <span className='toggle-light'>Light</span>
-            <Switch className='switch'>
+            <Switch>
               <input type='checkbox' onChange={toggleDarkMode} />
               <Slider isDarkMode={isDarkMode} className='slider round'></Slider>
             </Switch>
