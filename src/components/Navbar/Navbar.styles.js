@@ -46,6 +46,7 @@ export const Switch = styled.label`
   display: inline-block;
   margin: 0 6px;
   width: 30px;
+  height: 16px;
 
   input {
     opacity: 0;
@@ -82,9 +83,9 @@ export const Slider = styled.span`
   :before {
     position: absolute;
     content: '';
-    height: 13px;
-    width: 13px;
-    left: 2px;
+    height: 12px;
+    width: 12px;
+    left: 3px;
     bottom: 2px;
     background-color: ${({ isDarkMode }) =>
       isDarkMode ? 'var(--black)' : 'var(--white)'};
